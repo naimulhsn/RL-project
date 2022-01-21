@@ -8,9 +8,9 @@ import time  # using this to keep track of our saved Q-Tables.
 
 style.use("ggplot")  # setting our style!
 
-SIZE = 20
+SIZE = 12
 
-HM_EPISODES = 100000
+HM_EPISODES = 500000
 MOVE_PENALTY = 1  # feel free to tinker with these!
 ENEMY_PENALTY = 300  # feel free to tinker with these!
 FOOD_REWARD = 150  # feel free to tinker with these!
@@ -21,7 +21,7 @@ SHOW_EVERY = 10000  # how often to play through env visually.
 start_q_table = None  # if we have a pickled Q table, we'll put the filename of it here.
 
 LEARNING_RATE = 0.05
-DISCOUNT = 0.80
+DISCOUNT = 0.9
 
 PLAYER_N = 1  # player key in dict
 FOOD_N = 2  # food key in dict
